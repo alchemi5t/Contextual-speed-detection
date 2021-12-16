@@ -17,3 +17,7 @@ This script will train the model. command line argument norm will train a Vanill
 
 `python SaveResults.py`
 This script can be used to generate the output frames for the gif used in the presentation. each frame will be the input optical flow, and it will have the ground truth and predicted value on the image.
+
+
+Acknowledgement:
+Basline model credits : https://github.com/MahimanaGIT/SpeedPrediction_Comma.AI
