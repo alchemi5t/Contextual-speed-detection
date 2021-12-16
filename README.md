@@ -4,3 +4,16 @@ In the work, we aim to estimate the speed of a moving vehicle. The input to the 
 
 Usage:
 
+Data preprocessing:
+`python ./DatasetConverter.py`
+Make sure the data path is set correctly and the data folder has the training video. This script will convert the video to images.
+
+`python VideoToOpticalFlowImage.py`
+This script will convert the images into Optical flow frames.
+
+
+`python train.py [norm|co]`
+This script will train the model. command line argument norm will train a Vanilla Nvidia CNN. commandline argument co will train the contextual variant of Nvidia's CNN.
+
+`python SaveResults.py`
+This script can be used to generate the output frames for the gif used in the presentation. each frame will be the input optical flow, and it will have the ground truth and predicted value on the image.
